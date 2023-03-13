@@ -42,6 +42,13 @@ p:hover {
 	transform: scale(1.01);
 }
 
+/* Media query to resize p elements text for small screens */
+@media (max-width: 576px) {
+    p {
+        font-size: 12px;
+    }
+}
+
 /* Center class */
 .center {
     text-align: center;
@@ -95,7 +102,6 @@ footer {
     background-color: white;
 }
 
-
 /*** NAVBAR STYLING ***/
 
 /* Navbar class */
@@ -137,14 +143,6 @@ footer {
     to {top: 0vw;}
 }
 
-/* Media query to resize navbar links for small screens */
-@media screen and (max-width: 576px) {
-    .Navbar a{
-        width: 25%;
-        font-size: 12px;
-    }
-}
-
 /* Navbar hover effects */
 .Navbar a:hover {
     background-color: darkgray;
@@ -155,6 +153,14 @@ footer {
 /* Navbar home button */
 .Navbar a.active {
     background-color: darkgray;
+}
+
+/* Media query to resize navbar links for small screens */
+@media (max-width: 576px) {
+    .Navbar a {
+        width: 25%;
+        font-size: 12px;
+    }
 }
 
 /*** VIDEO STYLING ***/
@@ -169,7 +175,7 @@ footer {
 }
 
 /* Media query to hide video on small screens */
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
     #background-video {
         display: none;
     }
@@ -210,7 +216,7 @@ footer {
 }
 
 /* Media query to add scrollbar on small screens */
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
     .Column_1 {
         overflow: auto;
     }
