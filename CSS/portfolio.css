@@ -29,7 +29,7 @@ h1:hover {
 /* Paragraph elements */
 p {
     font-family: Perpetua, Rockwell Extra Bold;
-    text-align: justify;
+    text-align: left;
     letter-spacing: 1px;
     font-size: 20px;
     padding-left: 20px;
