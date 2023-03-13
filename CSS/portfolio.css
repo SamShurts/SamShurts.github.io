@@ -45,6 +45,7 @@ p:hover {
 /* Media query to resize p elements text for small screens */
 @media (max-width: 576px) {
     p {
+        text-align: left;
         font-size: 12px;
     }
 }
