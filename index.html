@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- HEAD -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio | Sam Shurts</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/portfolio.css">
+    <link rel="icon" href="./Images/favicon.ico" type="image/x-icon">
+</head>
+
+<!-- BODY -->
+<body class="Background">
+    
+    <!-- NAVBAR -->
+    <nav class="Navbar">
+        <a class="active" href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#GitHub">GitHub</a>
+        <a href="#Contact">Contact</a>
+    </nav>
+
+    <br>
+    <br>
+
+    <!-- BACKGROUND VIDEO -->
+    <div id="Home">
+        <video autoplay muted loop id="background-video">
+            <source src="./Images/Videos/cmd_1080p.mp4" type="video/mp4">
+            <!-- Display message if video fails to play -->
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <!-- VIDEO TEXT -->
+    <div class="Video_Text">
+        <h1 class="white-text">Sam's Portfolio</h1>
+        <strong>
+            <p class="center">
+                <q>The day you stop learning is the day you begin decaying.</q>
+                    <br>
+                    <br> -Isaac Asimov
+                <br>
+                <br>
+                <br> My name is Sam Shurts. Welcome to my portfolio website. Please read on to learn more about my background and experience.
+                <br>
+                <br> Thank you for stopping by!
+            </p>
+        </strong>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="Row" id="About">
+        <!--Left column-->
+        <div class="Column_2">
+            <img src="./Images/portland.jpg" alt="Portland and Mt. Hood">
+        </div>
+        <!--Right column-->
+        <div class="Column_1">
+            <h1>About</h1>
+            <p>
+                I am a former lawyer turned software developer with a passion for IT, networks and computer hardware. I'm located in Portland, OR, where I live with my wife and our precious tortoiseshell cat, Luna.
+                <br>
+                <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Cybersecurity Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
+                <br>
+                <br>I am a full-stack developer and cybersecurity specialist. I would love to work with you on your next project. <a href="#Contact">Contact</a> me below!
+            </p>
+        </div>
+    </div>
+
+    <!-- GITHUB -->
+    <div class="Row" id="GitHub">
+        <!-- Left column -->
+        <div class="Column_1">
+            <h1>GitHub</h1>
+            <p>
+                
+                <br>
+                <p class="center">You can view my coding projects on my GitHub profile here:
+                    <span><a href="https://github.com/SamShurts" target="_blank">Sam Shurts - Github</a></span>
+                </p>
+            </p>
+        </div>
+        <!-- Right column -->
+        <div class="Column_2">
+            <a href="https://github.com/SamShurts" target="_blank"><img src="./Images/GitHub.png" alt="GitHub Logo"></a>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="Row" id="Contact">
+        <!-- Contact image/left column -->
+        <div class="Column_2 Column_tall">
+            <img src="./Images/luna.jpg" alt="Luna the Tortie">
+        </div>
+        <!-- Contact form/right column -->
+        <div class="Column_1 Column_tall">
+            <h1>Contact</h1>
+            <form action="https://formspree.io/f/meqwzzgd" method="POST">
+                <label>Name:</label>
+                    <input type="text" placeholder="Please enter your name here">
+                <label>Email:</label>
+                    <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                <label>Message:</label>
+                    <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                    <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            <p class="center">&copy; 2023 SFKS</p>
+            <br>
+        </p>
+    </footer>
+
+</body>
+
+</html>
