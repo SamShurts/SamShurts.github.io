@@ -12,21 +12,23 @@
 </head>
 
 <!-- BODY -->
-<body class="Background">
+<body class="background">
     
     <!-- NAVBAR -->
-    <nav class="Navbar">
-        <a class="active" href="#Home">Home</a>
-        <a href="#About">About</a>
-        <a href="#GitHub">GitHub</a>
-        <a href="#Contact">Contact</a>
+    <nav class="navbar">
+        <a class="active" href="#home">Home</a>
+        <a href="#slideshow">Slideshow</a>
+        <a href="#about">About</a>
+        <a href="#github">GitHub</a>
+        <!-- <a href="#contact">Contact</a> -->
+        <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
     </nav>
 
     <br>
     <br>
 
     <!-- BACKGROUND VIDEO -->
-    <div id="Home">
+    <div id="home">
         <video autoplay muted loop id="background-video">
             <source src="./Images/Videos/cmd_1080p.mp4" type="video/mp4">
             <!-- Display message if video fails to play -->
@@ -35,7 +37,7 @@
     </div>
 
     <!-- VIDEO TEXT -->
-    <div class="Video_Text">
+    <div class="video-text">
         <h1 class="white-text">Sam's Portfolio</h1>
         <strong>
             <p class="center">
@@ -51,32 +53,81 @@
         </strong>
     </div>
 
+    <!-- SLIDESHOW -->
+    <div id="slideshow">
+        <div id="slideshow-background">
+            <div id="slideshow-container">
+
+                <!-- Slides -->
+                <div class="slides">
+                    <img class="slide-images" src="./Images/" alt="Slide 1">
+                    <div class="slide-text">Slide 1 Text</div>
+                </div>
+                <div class="slides">
+                    <img class="slide-images" src="./Images/" alt="Slide 2">
+                    <div class="slide-text">Slide 2 Text</div>
+                </div>
+                <div class="slides">
+                    <img class="slide-images" src="./Images/" alt="Slide 3">
+                    <div class="slide-text">Slide 3 Text</div>
+                </div>
+                <div class="slides">
+                    <img class="slide-images" src="./Images/" alt="Slide 4">
+                    <div class="slide-text">Slide 4 Text</div>
+                </div>
+                <div class="slides">
+                    <img class="slide-images" src="./Images/" alt="Slide 5">
+                    <div class="slide-text">Slide 5 Text</div>
+                </div>
+                <div class="slides">
+                    <img class="slide-images" src="./Images/" alt="Slide 6">
+                    <div class="slide-text">Slide 6 Text</div>
+                </div>
+
+                <!-- Previous and next buttons -->
+                <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br> <!-- Adds space between slide images and navigation dots -->
+
+                <!-- Slideshow navigation dots -->
+                <div style="text-align: center">
+                    <span class="dots" onclick="currentSlide(1)"></span>
+                    <span class="dots" onclick="currentSlide(2)"></span>
+                    <span class="dots" onclick="currentSlide(3)"></span>
+                    <span class="dots" onclick="currentSlide(4)"></span>
+                    <span class="dots" onclick="currentSlide(5)"></span>
+                    <span class="dots" onclick="currentSlide(6)"></span>
+                </div>
+        </div>
+    </div>
+
     <!-- ABOUT -->
-    <div class="Row" id="About">
+    <div class="row" id="about">
         <!--Left column-->
-        <div class="Column_2">
+        <div class="column-2">
             <img src="./Images/portland.jpg" alt="Portland and Mt. Hood">
         </div>
         <!--Right column-->
-        <div class="Column_1">
+        <div class="column-1">
             <h1>About</h1>
             <p>
                 I am a former lawyer turned software developer with a passion for IT, networks and computer hardware. I'm located in Portland, OR, where I live with my wife and our precious tortoiseshell cat, Luna.
                 <br>
                 <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Cybersecurity Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
                 <br>
-                <br>I am a full-stack developer and cybersecurity specialist. I would love to work with you on your next project. <a href="#Contact">Contact</a> me below!
+                <br>I am a full-stack developer and cybersecurity specialist. I would love to work with you on your next project. <a href="#contact">Contact</a> me below!
             </p>
         </div>
     </div>
 
     <!-- GITHUB -->
-    <div class="Row" id="GitHub">
+    <div class="row" id="github">
         <!-- Left column -->
-        <div class="Column_1">
+        <div class="column-1">
             <h1>GitHub</h1>
             <p>
-                
                 <br>
                 <p class="center">You can view my coding projects on my GitHub profile here:
                     <span><a href="https://github.com/SamShurts" target="_blank">Sam Shurts - Github</a></span>
@@ -84,28 +135,31 @@
             </p>
         </div>
         <!-- Right column -->
-        <div class="Column_2">
-            <a href="https://github.com/SamShurts" target="_blank"><img src="./Images/GitHub.png" alt="GitHub Logo"></a>
+        <div class="column-2">
+            <a href="https://github.com/SamShurts" target="_blank"><img src="./Images/github.png" alt="GitHub Logo"></a>
         </div>
     </div>
 
     <!-- CONTACT -->
-    <div class="Row" id="Contact">
+    <div class="row" id="contact">
         <!-- Contact image/left column -->
-        <div class="Column_2 Column_tall">
+        <div class="column-2 column-tall">
             <img src="./Images/luna.jpg" alt="Luna the Tortie">
         </div>
         <!-- Contact form/right column -->
-        <div class="Column_1 Column_tall">
+        <div class="column-1 column-tall">
             <h1>Contact</h1>
-            <form action="https://formspree.io/f/meqwzzgd" method="POST">
-                <label>Name:</label>
-                    <input type="text" placeholder="Please enter your name here">
-                <label>Email:</label>
-                    <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                <label>Message:</label>
-                    <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+            <form class="form-container" action="https://formspree.io/f/meqwzzgd" method="POST">
+                <label for="name"><b>Name:</b></label>
+                    <input type="text" name="name" placeholder="Please enter your name here" required>
+                <label for="email"><b>Email:</b></label>
+                    <input type="text" name="email" placeholder="Please enter your email here" required>
+                <label for="message"><b>Message:</b></label>
+                    <input type="text" name="message" placeholder="Please write your message here"> <!-- Message not required -->
                     <input type="submit" value="SUBMIT">
+
+                <button class="button-submit" type="submit">SUBMIT</button>
+                <button class="button-cancel" type="button" onclick="closeForm()">CLOSE</button>
             </form>
         </div>
     </div>
@@ -117,6 +171,9 @@
             <br>
         </p>
     </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="./JS/portfolio.js"></script>
 
 </body>
 

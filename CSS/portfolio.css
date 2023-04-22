@@ -106,7 +106,7 @@ footer {
 /*** NAVBAR STYLING ***/
 
 /* Navbar class */
-.Navbar {
+.navbar {
     overflow: hidden;
     background-color: lightseagreen;
     position: fixed;
@@ -124,7 +124,7 @@ footer {
 }
 
 /* Navbar links */
-.Navbar a {
+.navbar a {
     float: left;
     display: block;
     color: white;
@@ -145,20 +145,20 @@ footer {
 }
 
 /* Navbar hover effects */
-.Navbar a:hover {
+.navbar a:hover {
     background-color: darkgray;
     color: black;
     font-weight: bold;
 }
 
 /* Navbar home button */
-.Navbar a.active {
+.navbar a.active {
     background-color: darkgray;
 }
 
 /* Media query to resize navbar links for small screens */
 @media (max-width: 576px) {
-    .Navbar a {
+    .navbar a {
         width: 25%;
         font-size: 12px;
     }
@@ -183,7 +183,7 @@ footer {
 }
 
 /* Video text overlay */
-.Video_Text {
+.video-text {
     background: rgba(0, 0, 0, 0.5);
     color: white;
     width: 100%;
@@ -207,7 +207,7 @@ footer {
 } 
 
 /* Column 1 class */
-.Column_1 {
+.column-1 {
     float: left;
     width: 50%;
     padding: 10px;
@@ -218,13 +218,13 @@ footer {
 
 /* Media query to add scrollbar on small screens */
 @media (max-width: 576px) {
-    .Column_1 {
+    .column-1 {
         overflow: auto;
     }
 }
 
 /* Column 2 class */
-.Column_2 {
+.column-2 {
     float: left;
     width: 50%;
     padding: 10px;
@@ -234,13 +234,13 @@ footer {
 }
 
 /* Taller columns in final row for contact form */
-.Column_tall {
+.column-tall {
     padding-top: 3.5%;
     height: 450px;
 }
 
 /* Inserts after row class */
-.Row:after {
+.row:after {
 	content: "";
 	display: table;
 	clear: both;
