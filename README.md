@@ -1,2 +1,1 @@
-# SamShurts.github.io
-Portfolio Website
+# My Portfolio Website - SamShurts.github.io
