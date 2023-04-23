@@ -290,7 +290,7 @@ footer {
     background-color: white; /* Makes the dots white */
     border-radius: 50%; /* Makes the dots circles by rounding each corner */
     display: inline-block; /* Allows the dots to sit next to eachother rather than on a new line */
-    transition: background-color 0.6s ease; /* When clicked on the dots transition to a different color when clicked or hovered over (the affect is defined below) */
+    transition: background-color 0.6s ease; /* Makes the dots transition to a different color when clicked or hovered over (the affect is defined below) */
     z-index: 1; /* This ensures the dots will be displayed above any other elements */
 }
 
